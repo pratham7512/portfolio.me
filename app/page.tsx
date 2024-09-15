@@ -3,8 +3,6 @@ import { useState, useEffect ,useRef} from 'react'
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable"
 import { Input } from "@/components/ui/input"
 import { Search } from "lucide-react"
-import Image from "next/image"
-import image from '../public/image.gif'
 import { Badge } from "@/components/ui/badge"
 import { Github, Linkedin, Twitter , Clock, Mail} from 'lucide-react'
 
@@ -155,13 +153,17 @@ export default function Component() {
       <ResizablePanel defaultSize={65}>
         <div className="relative h-full overflow-hidden">
           <div className="absolute inset-0 bg-background"></div>
-          <div className="absolute inset-0 opacity-20"></div>
-            <Image
-              src={image}
-              alt="Portfolio background"
-              className="w-full h-full object-cover contrast-125 brightness-50"
-            />
-            <div className="absolute top-4 left-4 bg-white bg-opacity-0 rounded-lg p-3 text-white text-sm">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover contrast-125 brightness-50"
+          >
+            <source src="/image.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute top-4 left-4 bg-white bg-opacity-0 rounded-lg p-3 text-white text-sm">
             <div className="flex items-center mb-2">
               <Clock size={16} className="mr-2" />
               {/* Conditionally render the time */}
