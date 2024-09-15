@@ -87,11 +87,11 @@ export default function Component() {
       <ResizablePanel defaultSize={35} minSize={35}>
       <div className="flex flex-col h-full bg-background text-white p-6">
           <div className="flex-grow">
-            <h1 className="text-6xl font-bold mb-4">Hi, I'm Prathamesh</h1>
+            <h1 className="text-6xl font-bold mb-4">Hi, I&apos;m Prathamesh</h1>
             <h2 className="text-xl mb-2">Software Developer</h2>
             <div className="mb-6">
             <p className="text-chart-1 text leading-relaxed">
-              I specialize in backend technologies and I'm passionate about creating AI-driven tools that solve real-world problems. Currently, I'm expanding my skills into frontend development.
+              I specialize in backend technologies and I&apos;m passionate about creating AI-driven tools that solve real-world problems. Currently, I&apos;m expanding my skills into frontend development.
             </p>
           </div>
 
